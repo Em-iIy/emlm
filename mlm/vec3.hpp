@@ -2,8 +2,11 @@
 
 #include "vec1.hpp"
 #include "vec2.hpp"
+#include "ivec3.hpp"
 
 namespace mlm {
+
+struct ivec3;
 
 struct vec3 {
 	float x;
@@ -30,6 +33,8 @@ struct vec3 {
 
 	vec3();
 	~vec3();
+
+	operator ivec3() const;
 
 	float	&operator[](unsigned int i);
 	const float	&operator[](unsigned int i) const;

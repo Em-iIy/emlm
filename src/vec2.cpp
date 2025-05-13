@@ -15,6 +15,16 @@ vec2::vec2(const vec2 &v): x(v.x), y(v.y) {}
 vec2::vec2() {}
 vec2::~vec2() {}
 
+vec2::operator ivec2() const
+{
+	return (
+		ivec2(
+			static_cast<int>(this->x),
+			static_cast<int>(this->y)
+		)
+	);
+}
+
 float	&vec2::operator[](unsigned int i)
 {
 	assert(i < 2);

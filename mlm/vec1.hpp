@@ -1,6 +1,10 @@
 #pragma once
 
+#include "ivec1.hpp"
+
 namespace mlm {
+
+struct ivec1;
 
 struct vec1 {
 	float x;
@@ -10,6 +14,8 @@ struct vec1 {
 
 	vec1();
 	~vec1();
+
+	operator ivec1() const;
 
 	float	&operator[](unsigned int i);
 	const float	&operator[](unsigned int i) const;

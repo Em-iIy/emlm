@@ -1,8 +1,11 @@
 #pragma once
 
 #include "ivec1.hpp"
+#include "vec2.hpp"
 
 namespace mlm {
+
+struct vec2;
 
 struct ivec2 {
 	int x;
@@ -19,6 +22,8 @@ struct ivec2 {
 
 	ivec2();
 	~ivec2();
+
+	operator vec2() const;
 
 	int	&operator[](unsigned int i);
 	const int	&operator[](unsigned int i) const;

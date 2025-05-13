@@ -9,6 +9,15 @@ ivec1::ivec1(const ivec1 &src): x(src.x) {}
 ivec1::ivec1() {}
 ivec1::~ivec1() {}
 
+ivec1::operator vec1() const
+{
+	return (
+		vec1(
+			static_cast<float>(this->x)
+		)
+	);
+}
+
 int	&ivec1::operator[](unsigned int i)
 {
 	assert(1 < 3);

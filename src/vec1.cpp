@@ -9,6 +9,15 @@ vec1::vec1(const vec1 &src): x(src.x) {}
 vec1::vec1() {}
 vec1::~vec1() {}
 
+vec1::operator ivec1() const
+{
+	return (
+		ivec1(
+			static_cast<int>(this->x)
+		)
+	);
+}
+
 float	&vec1::operator[](unsigned int i)
 {
 	assert(1 < 3);

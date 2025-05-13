@@ -46,6 +46,17 @@ ivec4::ivec4(const ivec4 &v): x(v.x), y(v.y), z(v.z), w(v.w) {}
 ivec4::ivec4() {};
 ivec4::~ivec4() {};
 
+ivec4::operator vec4() const
+{
+	return (
+		vec4(
+			static_cast<float>(this->x),
+			static_cast<float>(this->y),
+			static_cast<float>(this->z),
+			static_cast<float>(this->w)
+		)
+	);
+}
 
 int	&ivec4::operator[](unsigned int i)
 {

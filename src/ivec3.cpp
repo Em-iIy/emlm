@@ -24,6 +24,17 @@ ivec3::ivec3(const ivec3 &v): x(v.x), y(v.y), z(v.z) {}
 ivec3::ivec3() {}
 ivec3::~ivec3() {}
 
+ivec3::operator vec3() const
+{
+	return (
+		vec3(
+			static_cast<float>(this->x),
+			static_cast<float>(this->y),
+			static_cast<float>(this->z)
+		)
+	);
+}
+
 ivec3	&ivec3::operator=(const ivec3 &v)
 {
 	this->x = v.x;

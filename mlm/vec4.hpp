@@ -3,9 +3,12 @@
 #include "vec1.hpp"
 #include "vec2.hpp"
 #include "vec3.hpp"
+#include "ivec4.hpp"
 // #include "mat4.hpp"
 
 namespace mlm {
+
+struct ivec4;
 
 struct vec4 {
 	float x;
@@ -57,6 +60,8 @@ struct vec4 {
 
 	vec4();
 	~vec4();
+
+	operator ivec4() const;
 
 	float	&operator[](unsigned int i);
 	const float	&operator[](unsigned int i) const;
