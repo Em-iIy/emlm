@@ -6,6 +6,10 @@ FILES_SRCS =	vec1.cpp \
 				vec2.cpp \
 				vec3.cpp \
 				vec4.cpp \
+				ivec1.cpp \
+				ivec2.cpp \
+				ivec3.cpp \
+				ivec4.cpp \
 				mat4.cpp \
 				angles.cpp \
 				dot.cpp \

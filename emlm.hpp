@@ -5,6 +5,11 @@
 #include "mlm/vec3.hpp"
 #include "mlm/vec4.hpp"
 
+#include "mlm/ivec1.hpp"
+#include "mlm/ivec2.hpp"
+#include "mlm/ivec3.hpp"
+#include "mlm/ivec4.hpp"
+
 #include "mlm/mat4.hpp"
 
 #include "mlm/angles.hpp"
