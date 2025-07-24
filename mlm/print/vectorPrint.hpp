@@ -6,42 +6,42 @@
 #include "../vec4.hpp"
 #include <iostream>
 
-std::ostream &operator<<(std::ostream &o, const mlm::vec1 &v) {
+inline std::ostream &operator<<(std::ostream &o, const mlm::vec1 &v) {
 	o << "(" << v.x << ")";
 	return (o);
 }
 
-std::ostream &operator<<(std::ostream &o, const mlm::vec2 &v) {
+inline std::ostream &operator<<(std::ostream &o, const mlm::vec2 &v) {
 	o << "(" << v.x << ", " << v.y << ")";
 	return (o);
 }
 
-std::ostream &operator<<(std::ostream &o, const mlm::vec3 &v) {
+inline std::ostream &operator<<(std::ostream &o, const mlm::vec3 &v) {
 	o << "(" << v.x << ", " << v.y << ", " << v.z << ")";
 	return (o);
 }
 
-std::ostream &operator<<(std::ostream &o, const mlm::vec4 &v) {
+inline std::ostream &operator<<(std::ostream &o, const mlm::vec4 &v) {
 	o << "(" << v.x << ", " << v.y << ", " << v.z << ", " << v.w << ")";
 	return (o);
 }
 
-std::ostream &operator<<(std::ostream &o, const mlm::ivec1 &v) {
+inline std::ostream &operator<<(std::ostream &o, const mlm::ivec1 &v) {
 	o << "(" << v.x << ")";
 	return (o);
 }
 
-std::ostream &operator<<(std::ostream &o, const mlm::ivec2 &v) {
+inline std::ostream &operator<<(std::ostream &o, const mlm::ivec2 &v) {
 	o << "(" << v.x << ", " << v.y << ")";
 	return (o);
 }
 
-std::ostream &operator<<(std::ostream &o, const mlm::ivec3 &v) {
+inline std::ostream &operator<<(std::ostream &o, const mlm::ivec3 &v) {
 	o << "(" << v.x << ", " << v.y << ", " << v.z << ")";
 	return (o);
 }
 
-std::ostream &operator<<(std::ostream &o, const mlm::ivec4 &v) {
+inline std::ostream &operator<<(std::ostream &o, const mlm::ivec4 &v) {
 	o << "(" << v.x << ", " << v.y << ", " << v.z << ", " << v.w << ")";
 	return (o);
 }
