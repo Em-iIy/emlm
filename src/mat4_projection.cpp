@@ -44,4 +44,17 @@ mat4	ortho(const float &left, const float &right, const float &bottom, const flo
 	));
 }
 
+mat4	ortho(const float &left, const float &right, const float &bottom, const float &top, const float &near, const float &far)
+{
+	float	hor_diff = right - left;
+	float	vert_diff = top - bottom;
+	float	depth_diff = far - near;
+	return (mat4(
+		2.0f / hor_diff, 0.0f, 0.0f, 0.0f,
+		0.0f, 2.0f / vert_diff, 0.0f, .0f,
+		0.0f, 0.0f, -1.0f / depth_diff, 0.0f,
+		-(right + left) / hor_diff, -(top + bottom) / vert_diff, -(far + near) / depth_diff, 1.0f
+	));
+}
+
 }
