@@ -58,12 +58,12 @@ ivec2	&ivec2::operator=(const ivec2 &v)
 	return (*this);
 }
 
-bool	ivec2::operator==(const ivec2 &v)
+bool	ivec2::operator==(const ivec2 &v) const
 {
 	return (this->x == v.x && this->y == v.y);
 }
 
-bool	ivec2::operator!=(const ivec2 &v)
+bool	ivec2::operator!=(const ivec2 &v) const
 {
 	return (this->x != v.x && this->y != v.y);
 }

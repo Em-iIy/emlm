@@ -41,8 +41,8 @@ struct ivec3 {
 
 	ivec3	&operator=(const ivec3 &v);
 
-	bool	operator==(const ivec3 &v);
-	bool	operator!=(const ivec3 &v);
+	bool	operator==(const ivec3 &v) const;
+	bool	operator!=(const ivec3 &v) const;
 
 	ivec3	&operator-=(const ivec3 &v);
 	ivec3	&operator-=(const ivec1 &scalar);

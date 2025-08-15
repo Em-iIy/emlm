@@ -30,8 +30,8 @@ struct ivec2 {
 
 	ivec2	&operator=(const ivec2 &v);
 
-	bool	operator==(const ivec2 &v);
-	bool	operator!=(const ivec2 &v);
+	bool	operator==(const ivec2 &v) const;
+	bool	operator!=(const ivec2 &v) const;
 
 	ivec2	&operator-=(const ivec2 &v);
 	ivec2	&operator-=(const ivec1 &scalar);

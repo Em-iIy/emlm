@@ -52,22 +52,22 @@ ivec1	&ivec1::operator=(const int &scalar)
 	return (*this);
 }
 
-bool	ivec1::operator==(const ivec1 &v)
+bool	ivec1::operator==(const ivec1 &v) const
 {
 	return (this->x == v.x);
 }
 
-bool	ivec1::operator==(const int &scalar)
+bool	ivec1::operator==(const int &scalar) const
 {
 	return (this->x == scalar);
 }
 
-bool	ivec1::operator!=(const ivec1 &v)
+bool	ivec1::operator!=(const ivec1 &v) const
 {
 	return (this->x != v.x);
 }
 
-bool	ivec1::operator!=(const int &scalar)
+bool	ivec1::operator!=(const int &scalar) const
 {
 	return (this->x != scalar);
 }

@@ -58,12 +58,12 @@ vec2	&vec2::operator=(const vec2 &v)
 	return (*this);
 }
 
-bool	vec2::operator==(const vec2 &v)
+bool	vec2::operator==(const vec2 &v) const
 {
 	return (this->x == v.x && this->y == v.y);
 }
 
-bool	vec2::operator!=(const vec2 &v)
+bool	vec2::operator!=(const vec2 &v) const
 {
 	return (this->x != v.x && this->y != v.y);
 }

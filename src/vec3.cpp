@@ -73,12 +73,12 @@ const float	&vec3::operator[](unsigned int i) const
 	}
 }
 
-bool	vec3::operator==(const vec3 &v)
+bool	vec3::operator==(const vec3 &v) const
 {
 	return (this->x == v.x && this->y == v.y && this->z == v.z);
 }
 
-bool	vec3::operator!=(const vec3 &v)
+bool	vec3::operator!=(const vec3 &v) const
 {
 	return (this->x != v.x && this->y != v.y && this->z != v.z);
 }

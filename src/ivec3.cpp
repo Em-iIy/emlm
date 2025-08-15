@@ -73,12 +73,12 @@ const int	&ivec3::operator[](unsigned int i) const
 	}
 }
 
-bool	ivec3::operator==(const ivec3 &v)
+bool	ivec3::operator==(const ivec3 &v) const
 {
 	return (this->x == v.x && this->y == v.y && this->z == v.z);
 }
 
-bool	ivec3::operator!=(const ivec3 &v)
+bool	ivec3::operator!=(const ivec3 &v) const
 {
 	return (this->x != v.x && this->y != v.y && this->z != v.z);
 }

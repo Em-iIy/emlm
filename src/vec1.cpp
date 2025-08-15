@@ -52,22 +52,22 @@ vec1	&vec1::operator=(const float &scalar)
 	return (*this);
 }
 
-bool	vec1::operator==(const vec1 &v)
+bool	vec1::operator==(const vec1 &v) const
 {
 	return (this->x == v.x);
 }
 
-bool	vec1::operator==(const float &scalar)
+bool	vec1::operator==(const float &scalar) const
 {
 	return (this->x == scalar);
 }
 
-bool	vec1::operator!=(const vec1 &v)
+bool	vec1::operator!=(const vec1 &v) const
 {
 	return (this->x != v.x);
 }
 
-bool	vec1::operator!=(const float &scalar)
+bool	vec1::operator!=(const float &scalar) const
 {
 	return (this->x != scalar);
 }

@@ -23,10 +23,10 @@ struct vec1 {
 	vec1	&operator=(const vec1 &v);
 	vec1	&operator=(const float &scalar);
 
-	bool	operator==(const vec1 &v);
-	bool	operator==(const float &scalar);
-	bool	operator!=(const vec1 &v);
-	bool	operator!=(const float &scalar);
+	bool	operator==(const vec1 &v) const;
+	bool	operator==(const float &scalar) const;
+	bool	operator!=(const vec1 &v) const;
+	bool	operator!=(const float &scalar) const;
 
 
 	vec1	&operator-=(const vec1 &v);

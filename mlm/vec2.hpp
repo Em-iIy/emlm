@@ -30,8 +30,8 @@ struct vec2 {
 
 	vec2	&operator=(const vec2 &v);
 
-	bool	operator==(const vec2 &v);
-	bool	operator!=(const vec2 &v);
+	bool	operator==(const vec2 &v) const;
+	bool	operator!=(const vec2 &v) const;
 
 	vec2	&operator-=(const vec2 &v);
 	vec2	&operator-=(const vec1 &scalar);

@@ -100,11 +100,11 @@ ivec4	&ivec4::operator=(const ivec4 &v)
 	return (*this);
 }
 
-bool	ivec4::operator==(const ivec4 &v)
+bool	ivec4::operator==(const ivec4 &v) const
 {
 	return (this->x == v.x && this->y == v.y && this->z == v.z && this->w == v.w);
 }
-bool	ivec4::operator!=(const ivec4 &v)
+bool	ivec4::operator!=(const ivec4 &v) const
 {
 	return (this->x != v.x && this->y != v.y && this->z != v.z && this->w != v.w);
 }

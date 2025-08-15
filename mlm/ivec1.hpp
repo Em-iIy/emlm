@@ -23,10 +23,10 @@ struct ivec1 {
 	ivec1	&operator=(const ivec1 &v);
 	ivec1	&operator=(const int &scalar);
 
-	bool	operator==(const ivec1 &v);
-	bool	operator==(const int &scalar);
-	bool	operator!=(const ivec1 &v);
-	bool	operator!=(const int &scalar);
+	bool	operator==(const ivec1 &v) const;
+	bool	operator==(const int &scalar) const;
+	bool	operator!=(const ivec1 &v) const;
+	bool	operator!=(const int &scalar) const;
 
 
 	ivec1	&operator-=(const ivec1 &v);

@@ -68,8 +68,8 @@ struct vec4 {
 
 	vec4	&operator=(const vec4 &v);
 
-	bool	operator==(const vec4 &v);
-	bool	operator!=(const vec4 &v);
+	bool	operator==(const vec4 &v) const;
+	bool	operator!=(const vec4 &v) const;
 
 	vec4	&operator-=(const vec4 &v);
 	vec4	&operator-=(const vec1 &scalar);

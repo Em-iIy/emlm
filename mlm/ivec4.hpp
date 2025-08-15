@@ -68,8 +68,8 @@ struct ivec4 {
 
 	ivec4	&operator=(const ivec4 &v);
 
-	bool	operator==(const ivec4 &v);
-	bool	operator!=(const ivec4 &v);
+	bool	operator==(const ivec4 &v) const;
+	bool	operator!=(const ivec4 &v) const;
 
 	ivec4	&operator-=(const ivec4 &v);
 	ivec4	&operator-=(const ivec1 &scalar);
