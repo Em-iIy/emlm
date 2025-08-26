@@ -106,7 +106,7 @@ bool	vec4::operator==(const vec4 &v) const
 }
 bool	vec4::operator!=(const vec4 &v) const
 {
-	return (this->x != v.x && this->y != v.y && this->z != v.z && this->w != v.w);
+	return (this->x != v.x || this->y != v.y || this->z != v.z || this->w != v.w);
 }
 
 vec4	&vec4::operator-=(const vec4 &v)

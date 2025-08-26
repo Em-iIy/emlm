@@ -65,7 +65,7 @@ bool	vec2::operator==(const vec2 &v) const
 
 bool	vec2::operator!=(const vec2 &v) const
 {
-	return (this->x != v.x && this->y != v.y);
+	return (this->x != v.x || this->y != v.y);
 }
 
 vec2	&vec2::operator-=(const vec2 &v)

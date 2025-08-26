@@ -80,7 +80,7 @@ bool	vec3::operator==(const vec3 &v) const
 
 bool	vec3::operator!=(const vec3 &v) const
 {
-	return (this->x != v.x && this->y != v.y && this->z != v.z);
+	return (this->x != v.x || this->y != v.y || this->z != v.z);
 }
 
 vec3	&vec3::operator-=(const vec3 &v)

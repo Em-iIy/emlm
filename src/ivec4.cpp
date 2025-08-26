@@ -106,7 +106,7 @@ bool	ivec4::operator==(const ivec4 &v) const
 }
 bool	ivec4::operator!=(const ivec4 &v) const
 {
-	return (this->x != v.x && this->y != v.y && this->z != v.z && this->w != v.w);
+	return (this->x != v.x || this->y != v.y || this->z != v.z || this->w != v.w);
 }
 
 ivec4	&ivec4::operator-=(const ivec4 &v)
