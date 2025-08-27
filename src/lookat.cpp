@@ -7,6 +7,20 @@
 
 namespace mlm {
 
+mat4	lookat(const vec3 &front, const vec3 &in_up)
+{
+	vec3 dir(normalize(front));
+	vec3 right(normalize(cross(dir, in_up)));
+	vec3 up(cross(right, dir));
+
+	return (mat4(
+		right.x, up.x, -dir.x, 0.0f,
+		right.y, up.y, -dir.y, 0.0f,
+		right.z, up.z, -dir.z, 0.0f,
+		0.0f,0.0f,0.0f, 1.0f
+	));
+}
+
 mat4	lookat(const vec3 &pos, const vec3 &front, const vec3 &in_up)
 {
 	vec3 dir(normalize(front - pos));
