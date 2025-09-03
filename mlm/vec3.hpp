@@ -2,11 +2,13 @@
 
 #include "vec1.hpp"
 #include "vec2.hpp"
+#include "vec4.hpp"
 #include "ivec3.hpp"
 
 namespace mlm {
 
 struct ivec3;
+struct vec4;
 
 struct vec3 {
 	float x;
@@ -30,6 +32,8 @@ struct vec3 {
 	vec3(const float &scalar);
 	vec3(const vec1 &scalar);
 	vec3(const vec3 &v);
+
+	vec3(const vec4 &v);
 
 	vec3();
 	~vec3();

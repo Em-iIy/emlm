@@ -21,6 +21,8 @@ vec3::vec3(const float &scalar): x(scalar), y(scalar), z(scalar) {}
 vec3::vec3(const vec1 &scalar): x(scalar.x), y(scalar.x), z(scalar.x) {}
 vec3::vec3(const vec3 &v): x(v.x), y(v.y), z(v.z) {}
 
+vec3::vec3(const vec4 &v): x(v.x), y(v.y), z(v.z) {}
+
 vec3::vec3() {}
 vec3::~vec3() {}
 

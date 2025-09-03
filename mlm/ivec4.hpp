@@ -9,6 +9,7 @@
 namespace mlm {
 
 struct vec4;
+struct ivec3;
 
 struct ivec4 {
 	int x;
