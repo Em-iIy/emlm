@@ -17,6 +17,7 @@ FILES_SRCS =	vec1.cpp \
 				cross.cpp \
 				normalize.cpp \
 				mat4_transform.cpp \
+				mat4_transpose.cpp \
 				mat4_projection.cpp \
 				lookat.cpp \
 

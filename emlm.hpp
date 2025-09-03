@@ -19,5 +19,6 @@
 #include "mlm/normalize.hpp"
 
 #include "mlm/mat4_transform.hpp"
+#include "mlm/mat4_transpose.hpp"
 #include "mlm/mat4_projection.hpp"
 #include "mlm/lookat.hpp"
