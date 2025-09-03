@@ -10,7 +10,7 @@ namespace mlm {
 // https://www.scratchapixel.com/lessons/3d-basic-rendering/perspective-and-orthographic-projection-matrix/building-basic-perspective-projection-matrix.html
 mat4	perspective(const float &fov, const float &near, const float &far)
 {
-	float scale = 1 / tan(fov * 0.5 * M_PI / 180);
+	float scale = 1 / tan(radians(fov) / 2);
 	float diff = far - near;
 	return (mat4(
 		scale, 0.0f, 0.0f, 0.0f,
