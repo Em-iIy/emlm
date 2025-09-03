@@ -1,6 +1,7 @@
 #include <cmath>
 
 #include "../mlm/mat4.hpp"
+#include "../mlm/angles.hpp"
 
 namespace mlm {
 
@@ -19,15 +20,14 @@ mat4	perspective(const float &fov, const float &near, const float &far)
 	));
 }
 
-
 mat4	perspective(const float &fov, const float &aspect, const float &near, const float &far)
 {
-	float tan_fov = tan(fov / 2);
+	float tan_fov = tan(radians(fov) / 2);
 	float diff = far - near;
 	return (mat4(
-		1 / (aspect * tan_fov), 0.0f, 0.0f, 0.0f,
-		0.0f, 1 / tan_fov, 0.0f, 0.0f,
-		0.0f, 0.0f, -(far / diff), -1.0f,
+		1.0f / (aspect * tan_fov), 0.0f, 0.0f, 0.0f,
+		0.0f, 1.0f / tan_fov, 0.0f, 0.0f,
+		0.0f, 0.0f, -(far + near) / diff, -1.0f,
 		0.0f, 0.0f, -(far * near) / diff, 0.0f
 	));
 }
