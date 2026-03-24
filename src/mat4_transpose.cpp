@@ -9,7 +9,7 @@ mat4	transpose(const mat4 &m)
 	ret[0][1] = m[1][0];
 	ret[0][2] = m[2][0];
 	ret[0][3] = m[3][0];
-	
+
 	ret[1][0] = m[0][1];
 	ret[1][1] = m[1][1];
 	ret[1][2] = m[2][1];

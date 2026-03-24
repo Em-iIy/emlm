@@ -54,6 +54,4 @@ mat4	scale(const mat4 &m, const vec3 &v)
 	));
 }
 
-// lookat
-
 }

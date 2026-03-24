@@ -457,5 +457,4 @@ vec4	operator/(const vec4 &v, const vec1 &scalar)
 	);
 }
 
-
 }

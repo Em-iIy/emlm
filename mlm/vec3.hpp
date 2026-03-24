@@ -89,5 +89,4 @@ vec3	operator/(const vec3 &v, const float &scalar);
 vec3	operator/(const vec1 &scalar, const vec3 &v);
 vec3	operator/(const vec3 &v, const vec1 &scalar);
 
-
 }

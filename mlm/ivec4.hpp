@@ -113,5 +113,4 @@ ivec4	operator/(const ivec4 &v, const int &scalar);
 ivec4	operator/(const ivec1 &scalar, const ivec4 &v);
 ivec4	operator/(const ivec4 &v, const ivec1 &scalar);
 
-
 }

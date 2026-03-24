@@ -114,5 +114,4 @@ vec4	operator/(const vec4 &v, const float &scalar);
 vec4	operator/(const vec1 &scalar, const vec4 &v);
 vec4	operator/(const vec4 &v, const vec1 &scalar);
 
-
 }

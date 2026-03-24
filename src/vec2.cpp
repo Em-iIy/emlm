@@ -355,5 +355,4 @@ vec2	operator/(const vec2 &v, const vec1 &scalar)
 	);
 }
 
-
 }

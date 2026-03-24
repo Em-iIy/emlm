@@ -457,5 +457,4 @@ ivec4	operator/(const ivec4 &v, const ivec1 &scalar)
 	);
 }
 
-
 }

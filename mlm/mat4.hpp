@@ -39,7 +39,7 @@ struct mat4 {
 
 	mat4	&operator*=(const vec1 &s);
 	mat4	&operator*=(const mat4 &m);
-	
+
 	mat4	&operator/=(const vec1 &s);
 	// mat4	&operator/=(const mat4 &m);
 };
@@ -61,6 +61,5 @@ vec4	operator*(const mat4 &m, const vec4 &v);
 mat4	operator/(const mat4 &m1, const mat4 &m2);
 mat4	operator/(const mat4 &m1, const vec1 &scalar);
 // mat4	operator/(const vec1 &scalar, const mat4 &m1);
-
 
 }
